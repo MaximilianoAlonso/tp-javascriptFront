@@ -89,3 +89,10 @@ figure{
   margin: auto;
   width: 20%;
 }
+.colorlink li a{
+  color:white
+}
+.colorlink li a:hover{
+  font-weight: 900;
+ letter-spacing: 1px;
+}
