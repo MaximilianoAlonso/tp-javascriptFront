@@ -4,7 +4,7 @@
 const labelMain = document.querySelector("main");
 const labelh2 = document.querySelector  ("h2");
 const labelA = document.querySelector("a");
-const labelP = document.querySelectorAll(".informacion p");
+const labelP = document.querySelectorAll("p");
 
 /* Haciendo uso del prompt, indicar al usuario que: “Ingrese su nombre”. */
 let nombreUsuario = prompt("Ingrese su nombre");
@@ -30,17 +30,10 @@ let cambiarFondo = confirm("¿Desea colocar un fondo de pantalla?")
 /* A todos los párrafos que fueron capturados, asignar a los pares la clase:
 “descatadoPar”. Y a los impares agregar la clase: “destacadoImpar”. */
 
-
-
-labelP.forEach(a =>  {
-     if (a%2 == 0 ) {
-        labelP.classList.add("descatadoPar")
-     } else {
-        labelP.classList.add("destacadoImpar")
-        }
+labelP.forEach((a, b )=>{
+   b%2 == 0 ? a.classList.add("descatadoPar"): a.classList.add("destacadoImpar")
     })
     
-
 /* Finalmente, establecer como visible a la etiqueta <main> en el browser o
 navegador, aplicando el estilo: display : block. */ 
 labelMain.style.display="block" 
